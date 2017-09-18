@@ -69,26 +69,37 @@
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules_moduleB__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules_moduleB___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__modules_moduleB__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modules_moduleA__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modules_moduleA___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__modules_moduleA__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules_moduleA__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modules_moduleA___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__modules_moduleA__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modules_moduleB__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modules_moduleB___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__modules_moduleB__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modules_moduleC__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modules_moduleC___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__modules_moduleC__);
 console.log('DEMO: Hello from entry.js');
 
 
 
 
-__WEBPACK_IMPORTED_MODULE_0__modules_moduleB___default.a.sayHello();
+
+__WEBPACK_IMPORTED_MODULE_1__modules_moduleB___default.a.sayHello();
+__WEBPACK_IMPORTED_MODULE_2__modules_moduleC___default.a.sayHello();
 
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports) {
+
+console.log('DEMO:MODULE Hello from module A');
+
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function () {
   return {
     sayHello: function () {
-      console.log('DEMO:MODULE-B Saying hello from moduleB');
+      console.log('DEMO:MODULE-B Saying hello from module B');
     }
   };
 }.call(exports, __webpack_require__, exports, module),
@@ -96,10 +107,14 @@ var __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_RESULT__ = function () 
 
 
 /***/ }),
-/* 2 */
-/***/ (function(module, exports) {
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
 
-console.log('DEMO:MODULE Hello from module A');
+"use strict";
+
+module.exports = {
+    'sayHello': function () { console.log('DEMO:MODULE Hello from TypeScript!'); }
+};
 
 
 /***/ })

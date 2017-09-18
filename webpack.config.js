@@ -7,6 +7,12 @@ module.exports = {
     'path': path.resolve(__dirname, 'dist'),
     'filename': 'webpackdemo.js'
   },
+  'resolve': {
+    'extensions': ['.js', '.ts']
+  },
+  'module': {
+    'rules': [{ 'test': /\.ts$/, 'use': 'ts-loader' }]
+  },
   'devServer': {
     'contentBase': path.resolve(__dirname, 'src'),
     'hot': true,

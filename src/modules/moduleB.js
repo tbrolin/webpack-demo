@@ -1,7 +1,7 @@
 define ('moduleB', function () {
   return {
     sayHello: function () {
-      console.log('DEMO:MODULE-B Saying hello from module B');
+      console.log('DEMO:MODULE Saying hello from module B');
     }
   };
 });
