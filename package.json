@@ -1,0 +1,15 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "Demo of what webpack is.",
+  "main": "src/entry.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "author": "",
+  "license": "ISC"
+}
