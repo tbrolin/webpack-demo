@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "."
+    "url": "git@github.com:tbrolin/webpack-demo.git"
   },
   "author": "",
   "license": "ISC",
